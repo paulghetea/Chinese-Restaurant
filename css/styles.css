@@ -32,7 +32,7 @@ body{
 	text-transform: uppercase;
 	align-items: center;
 }
-.nav-link:hover{
+.nav-link:hover , .nav-link:active{
 	border-radius: 10px;
 	border: 1px solid black;
 	background-color: darkgoldenrod;
@@ -45,6 +45,13 @@ body{
 
 .nav-list{
 	text-align: center;
+}
+
+.main-content{
+margin-bottom: 15px;
+display: block;
+margin-left: 5%;
+margin-right: 5%;
 }
 
 h2{
@@ -88,6 +95,7 @@ h1{
 	margin-right: 5%;
 	margin-left: 5%;
 	margin-top: 3%;
+	margin-bottom: 3%;
 }
 
 .jumbotron{
@@ -108,7 +116,7 @@ h1{
 /*Intro Items*/
 
 
-.menu, .specials, .map{
+.menu, .specials-icon, .map{
 	height: 250px;
 	width:  100%;
 	border-radius: 10px;
@@ -118,7 +126,7 @@ h1{
 	position:  relative;
 }
 
-.menu:hover, .specials:hover, .map:hover{
+.menu:hover, .specials-icon:hover, .map:hover{
 	box-shadow:  5px 10px #4d0000;
 }
 
@@ -128,13 +136,13 @@ h1{
 	background-size: 300%;
 }
 
-.specials{
+.specials-icon{
 	background:  url('../img/secondary_restaurant.jpg') no-repeat;
 	background-position: bottom left;
 	background-size: 200%;
 }
 
-.menu > span, .specials > span, .map > span{
+.menu > span, .specials-icon > span, .map > span{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -166,16 +174,96 @@ hr { display: block; height: 1px;
     border: 0; border-top: 1px solid #ccc;
     margin: 1em 0; padding: 0; }
 
+ /*
+		MENU CATEGORIES --------------------------------------------------------------------------------------
+ */
+
+.specials{
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.category{
+	position: relative;
+	border-radius: 3px;
+	padding: 0;
+}
+ .category > span{
+	position: absolute;
+	bottom: 11px;
+	left: 0;
+	background-color: white;
+	opacity: 0.8;
+	color: black;
+	font-size: 130%;
+	width: 100%;
+	border-radius: 5px;
+	margin: auto;
+ }
+.category > img{
+	width: 100%;
+	height: 100%;
+	margin: 5%;
+	margin-left: 0;
+}
+
+.category:hover > span{
+	color: yellow;
+	background-color: red;
+	border-color: yellow;
+}
+
+ .category >img{
+ 	border-radius: 15px;
+ }
+
+ /*
+		SINGLE CATEGORY --------------------------------------------------------------------------------------
+ */
+
+#dish-panel{
+	border-radius: 15px;
+	border:  3px solid white;
+}
+
+.dish-img > img{
+	border-radius: 15%;
+	width: 70%;
+	border:3px solid white;
+}
+
+#dish-column > .row{
+	margin-bottom: 2%;
+}
+
+#dish-column h3{
+	margin-top: 2%;
+	color:  yellow;
+	background-color: grey;
+	border-radius: 15px;
+}
+
 /*Responsive*/
 
 @media  (max-width:  767px){
-	
+		.dish-img > img{
+	border-radius: 15%;
+	width: 40%;
+	border:3px solid white;
+}
 }
 
 @media (min-width:  768px) and (max-width:  992px){
 	.navbar-brand > h1{
 		font-size: 150%;
 	}
+
+	.jumbotron{
+		padding: 3px;
+	}
+
+
 }
 
 @media (min-width:  992px) and (max-width: 1199px){

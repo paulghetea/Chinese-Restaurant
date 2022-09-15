@@ -35,12 +35,12 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item">
-		        <a class="nav-link" href="index.html"><span class="material-symbols-outlined">restaurant</span>Home</a>
+		        <a class="nav-link active" href="index.html"><span class="material-symbols-outlined">restaurant</span>Home</a>
 		      </li>
-		      <li class="nav-item">
+		      <li class="nav-item active">
 		        <a class="nav-link" href="#"><span class="material-symbols-outlined">question_mark</span>About us <span class="sr-only"></span></a>
 		      </li>
-		      <li class="nav-item">
+		      <li class="nav-item active">
 		        <a class="nav-link" href="#"><span class="material-symbols-outlined">my_location</span>Where are we?<span class="sr-only"></span></a>
 		      </li>
 		    </ul>
@@ -53,38 +53,69 @@
 	</header>
 
 	<div class="subtitle">
-		<h2>HOME</h2>
+		<h2>Lunch Menu</h2>
+		<span>Lunch will not be served until after 1pm</span>
 	</div>
 
-	<div id="main-content" class="container">
-		<div class="jumbotron">
-			<img src="img/main_restaurant.jpg" alt="Picture of restaurant" class="img-responsive d-none d-lg-block d-xl-none">
-			<img src="img/secondary_restaurant.jpg" alt="Picture of restaurant" class="img-responsive d-lg-none d-xl-block .d-xl-none">
-		</div>
-		<div id="home-tiles" class="row">
-			<div class="col-md-4 col-sm-6 col-xs-12">
-					<a href="menu-categories.html">
-						<div class="menu"> 
-							<span>Menu</span>
+	<div class="main-content">
+		<section class="dishes">
+			<div id="dish-panel" class="row">
+				<div id="dish-column" class="col-md-6">
+						<div class="dish-title"><h3>Dish1</h3>
 						</div>
-					</a>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
-					<a href="menu-categories.html">
-						<div class="specials-icon"> 
-							<span>Specials</span>
+						<div class="row">
+							<div class="dish-img col-md-4">
+								<img src="img/chinese-food.jpg">
+							</div>
+							<div class="dish-description col-md-8">
+								<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+									<br> lorem ipsum lorem ipsum lorem ipsum lorem ipsum  
+								</p>
+							</div>
 						</div>
-					</a>
-			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12">
-					<a href="https://goo.gl/maps/tEM4KW2xbtwMc9me9" traget="_blank">
-						<div class="map"> 
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236161.5346042137!2d114.1277!3d22.35272345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2sHong%20Kong!5e0!3m2!1ses!2ses!4v1663229984574!5m2!1ses!2ses" width="100%" height="221px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-							<span>Map</span>
+					</div>
+					<div id="dish-column" class="col-md-6">
+							<div class="dish-title"><h3>Dish2</h3></div>
+							<div class="row">
+							<div class="dish-img col-md-4">
+									<img src="img/chinese-food.jpg">
+							</div>
+							<div class="dish-description col-md-8">
+								<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+									<br> lorem ipsum lorem ipsum lorem ipsum lorem ipsum  
+								</p>
+							</div>
 						</div>
-					</a>
-			</div>
-		</div>
+					</div>
+					<div id="dish-column" class="col-md-6">
+							<div class="dish-title"><h3>Dish3</h3></div>
+							<div class="row">
+							<div class="dish-img col-md-4">
+									<img src="img/chinese-food.jpg">
+							</div>
+							<div class="dish-description col-md-8">
+								<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+									<br> lorem ipsum lorem ipsum lorem ipsum lorem ipsum  
+								</p>
+							</div>
+						</div>
+					</div>
+					<div id="dish-column" class="col-md-6">
+							<div class="dish-title"><h3>Dish4</h3></div>
+							<div class="row">
+							<div class="dish-img col-md-4">
+									<img src="img/chinese-food.jpg">
+							</div>
+							<div class="dish-description col-md-8">
+								<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+									<br> lorem ipsum lorem ipsum lorem ipsum lorem ipsum  
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+
 	</div>
 
 	<footer class="panel-footer">
