@@ -5,6 +5,190 @@ body{
 	text-align: center;
 }
 
+
+.title2{
+	font-size: 50%;
+	color: yellow;
+	background-color: #61122f;
+	border-radius: 13px;
+	padding-bottom : 0;
+	padding:  5px;
+}
+
+.title2 >p{
+	position: relative;
+	top: 8px;
+}
+
+.navbar-brand{
+	padding-bottom: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+.navbar-nav{
+	padding-bottom: 0;
+	text-transform: uppercase;
+	align-items: center;
+}
+.nav-link:hover{
+	border-radius: 10px;
+	border: 1px solid black;
+	background-color: darkgoldenrod;
+}
+
+.nav-link:focus{
+	background-color: darkgrey;
+	border-radius: 10px;
+}
+
+.nav-list{
+	text-align: center;
+}
+
+h2{
+	padding: 10px;
+	font-size: 300%;
+}
+
 h1{
+	text-align: center;
+	font-size: 100%;
 	font-family: 'Montserrat', sans-serif;
 }
+
+.navbar{
+	opacity: 0.8;
+}
+.title{
+	border-radius: 15px;
+	border: 2px solid #61122f;
+	padding: 0.5%;
+	padding-bottom: 0;
+}
+
+.navbar-toggler-icon{
+	border: 1px solid yellow;
+}
+
+.material-symbols-outlined {
+  font-size: 120%;
+  color: black;
+}
+
+/*Jumbotron*/
+
+.subtitle{
+	color:#61122f;
+	background-color: lightgrey;
+	border-radius: 10px;
+	padding-top: 0;
+	border-radius: 17px;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+.jumbotron{
+	border-radius: 17px;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 3%;
+
+}
+
+.img-responsive{
+	width: 85%;
+	border-radius: 15px;
+	margin:auto;
+	display:block;
+}
+
+/*Intro Items*/
+
+
+.menu, .specials, .map{
+	height: 250px;
+	width:  100%;
+	border-radius: 10px;
+	border: 15px solid white;
+	margin: 10px;
+	margin-left: 0;
+	position:  relative;
+}
+
+.menu:hover, .specials:hover, .map:hover{
+	box-shadow:  5px 10px #4d0000;
+}
+
+.menu{
+	background:  url('../img/menu.jpg') no-repeat;
+	background-position: center;
+	background-size: 300%;
+}
+
+.specials{
+	background:  url('../img/secondary_restaurant.jpg') no-repeat;
+	background-position: bottom left;
+	background-size: 200%;
+}
+
+.menu > span, .specials > span, .map > span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	width: 100%;
+	border-radius: 5px;
+	margin: 0;
+}
+
+/*Footer*/
+.panel-footer{
+	background-color: #4d0000 ;
+	text-align : center;
+}
+
+.panel-footer > .row{
+	padding-top: 10px;
+	margin: 0;
+	border-top: 1px solid white;
+}
+
+.panel-footer > section{
+	border-left: 3px solid white;
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; }
+
+/*Responsive*/
+
+@media  (max-width:  767px){
+	
+}
+
+@media (min-width:  768px) and (max-width:  992px){
+	.navbar-brand > h1{
+		font-size: 150%;
+	}
+}
+
+@media (min-width:  992px) and (max-width: 1199px){
+	.navbar-brand > h1{
+		font-size: 150%;
+	}
+
+}
+
+@media (min-width:  1200px){
+	.navbar-brand > h1{
+		font-size: 150%;
+	}
+}
+
+
